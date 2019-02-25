@@ -23,7 +23,7 @@ try {
 				
 				//문자일 때
 				if(typeof from === 'string' && typeof to === 'string') {
-					result = result.replace(new RegExp(from, 'gm'), to);
+					result = result.replace(new RegExp(from, 'g'), to);
 				}
 			}
 
