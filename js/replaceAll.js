@@ -21,7 +21,7 @@ try {
 		/**
 		 * @name replaceAll
 		 * @param {string} value
-		 * @param {string} from
+		 * @param {string || regexp} from
 		 * @param {string} to
 		 * @return {string}
 		 * @since 2018-07-13
