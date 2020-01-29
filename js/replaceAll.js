@@ -5,7 +5,7 @@
 (function() {
 	'use strict';
 
-	var _toString = Object.prototype.toString;
+	var toStr = Object.prototype.toString;
 
 	/**
 	 * @name 정규식 확인
@@ -13,8 +13,8 @@
 	 * @param {*} value
 	 * @return {boolean}
 	 */
-	function _isRegExp(value) {
-		return _toString.call(value) === '[object RegExp]';
+	function isRegExp(value) {
+		return toStr.call(value) === '[object RegExp]';
 	}
 
 	/**
@@ -33,7 +33,7 @@
 			result = value;
 			
 			//문자일 때
-			if((typeof from === 'string' || _isRegExp(from)) && typeof to === 'string') {
+			if((typeof from === 'string' || isRegExp(from)) && typeof to === 'string') {
 				result = result.replace(new RegExp(from, 'g'), to);
 			}
 		}
